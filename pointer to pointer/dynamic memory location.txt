@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void allocate_memory(char ** ptr) {
+  
+  *ptr = (char * ) malloc(9 * sizeof(char));
+}
+
+int main() {
+  char *word;
+  allocate_memory( &word);
+  strcpy(word, "Hello World");
+  printf("%s\n", word);
+  free(word);
+  return 0;
+}

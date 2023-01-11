@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main(int argc, char ** argv) {
+  printf("The name of the program is at index 0 : %s\n", argv[0]);
+  printf("Argument count (including the program name) : %d\n", argc);
+  for (int i = 1; i < argc; i++) {
+    printf("Argument at index %d : %s\n", i, argv[i]);
+  }
+  return 0;
+}

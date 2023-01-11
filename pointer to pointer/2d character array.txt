@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main() {
+  char **words;
+  
+  words = (char **) malloc(5 * sizeof( * words));
+
+ 
+  words[0] = "apple";
+  words[1] = "banana";
+  words[2] = "jackfruit";
+  words[3] = "melon";
+  words[4] = "orange";
+
+  for (int i = 0; i < 5; i++) {
+    printf("%s\n", words[i]);
+  }
+
+  free(words); 
+  return 0;
+}
